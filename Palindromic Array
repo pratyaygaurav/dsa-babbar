@@ -1,0 +1,36 @@
+  bool isPalin(int x)
+    {
+        string s = to_string(x);
+        int low=0;
+        int high=s.size()-1;
+        while(low<high)
+        {
+            if(s[low]==s[high])
+            {
+            low++;
+            high--;
+            }
+            else
+                return 0;
+        
+        }
+        return 1;
+    }
+    
+    
+    
+    int PalinArray(int a[], int n)
+    {
+    	// code here
+    	int sum=0;
+    	for(int i=0;i<n;i++)
+    	{
+    	   sum+=isPalin(a[i]);
+    	        
+    	}
+    	if(sum==n)
+    	return 1;
+    	else
+    	return 0;
+    	
+    }
