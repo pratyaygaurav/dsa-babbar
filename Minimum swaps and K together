@@ -22,6 +22,7 @@
                 
             ans = min(ans,bad);
         }
+        //minswao
                 
                 return ans;
         
